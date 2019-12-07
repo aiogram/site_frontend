@@ -19,7 +19,10 @@
         </h1>
         <p class="subheading font-weight-regular mx-3">
           <strong>aiogram</strong> is modern and fully asynchronous framework
-          <br/>for Telegram Bot API written in Python 3.7 with asyncio and aiohttp.
+          <br/>for <a href="https://core.telegram.org/bots/api">Telegram Bot API</a>
+          written in <a href="https://www.python.org/">Python</a>
+          with <a href="https://docs.python.org/3/library/asyncio.html">asyncio</a>
+          and <a href="https://aiohttp.readthedocs.io/en/stable/">aiohttp</a>.
           <br/>It helps you to make your bots faster and simpler.
         </p>
       </v-flex>
