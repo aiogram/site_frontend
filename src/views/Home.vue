@@ -60,7 +60,7 @@
         <p class="subheading font-weight-regular">
           For help and collaboration with other <strong>aiogram</strong> developers,
           <br>please visit our online
-          <a href="https://t.me/aiogram" target="_blank">english</a> or <a href="https://t.me/aiogram" target="_blank">russian</a> communities.
+          <a href="https://t.me/aiogram" target="_blank">english</a> or <a href="https://t.me/aiogram_ru" target="_blank">russian</a> communities.
         </p>
       </v-flex>
 

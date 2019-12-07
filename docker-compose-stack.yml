@@ -1,0 +1,38 @@
+version: "3.7"
+
+x-deploy: &base-deploy
+  restart_policy:
+    condition: on-failure
+  placement:
+    constraints:
+      - node.labels.aiogram_site == true
+
+services:
+  frontend:
+    image: "docker.illemius.xyz/aiogram_site/frontend:latest"
+    deploy:
+      <<: *base-deploy
+      update_config:
+        parallelism: 2
+        delay: 10s
+        order: start-first
+        failure_action: rollback
+      labels:
+        traefik.enable: "true"
+        traefik.docker.network: web
+        traefik.http.routers.aiogram-site-frontend-https.entrypoints: web-secure
+        traefik.http.routers.aiogram-site-frontend-https.rule: Host(`aiogram.dev`)
+        traefik.http.routers.aiogram-site-frontend-https.service: aiogram-site-frontend
+        traefik.http.routers.aiogram-site-frontend-https.tls: "true"
+        traefik.http.services.aiogram-site-frontend.loadbalancer.server.port: 80
+    networks:
+      - default
+      - web
+
+
+networks:
+  default:
+    driver: overlay
+  web:
+    driver: overlay
+    external: true
