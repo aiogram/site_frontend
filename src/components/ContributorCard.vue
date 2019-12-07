@@ -10,6 +10,7 @@
       :alt="username"
     />
     <v-card-title>{{ username }}</v-card-title>
+    <v-card-subtitle>Contributions: {{ contributions }}</v-card-subtitle>
     <v-card-text v-if="description">{{ description }}</v-card-text>
   </v-card>
 </template>
@@ -20,6 +21,7 @@
     props: {
       username: String,
       description: String,
+      contributions: String,
       profile: String,
       avatar: String,
     },

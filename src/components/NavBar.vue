@@ -1,17 +1,19 @@
 <template>
   <v-app-bar app color="primary" dark>
-    <div class="d-flex align-center">
-      <v-img
-        alt="aiogram logo"
-        class="shrink mr-2"
-        contain
-        :src="require('@/assets/logo.png')"
-        transition="scale-transition"
-        width="40"
-        @click="$route"
-      />
-      <v-toolbar-title>aiogram</v-toolbar-title>
-    </div>
+    <v-toolbar-items>
+      <v-btn text style="text-transform: none;" href="/">
+        <v-img
+          alt="aiogram logo"
+          class="shrink mr-2"
+          contain
+          :src="require('@/assets/logo.png')"
+          transition="scale-transition"
+          width="40"
+          @click="$route"
+        />
+        <v-toolbar-title>aiogram</v-toolbar-title>
+      </v-btn>
+    </v-toolbar-items>
     <v-spacer/>
     <v-toolbar-items>
       <GithubStatus/>
