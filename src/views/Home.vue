@@ -88,7 +88,7 @@
     data: () => ({
       versions: [
         {
-          documentation: 'https://aiogram.readthedocs.io',
+          documentation: 'https://docs.aiogram.dev',
           label: '2.4',
           tooltip: 'Latest',
         },
