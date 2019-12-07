@@ -9,7 +9,7 @@
         :username="contributor.login"
         :avatar="contributor.avatar_url || contributor.gravatar_id"
         :profile="contributor.html_url"
-        :contributions="contributor.contributions"
+        :contributions="`${contributor.contributions}`"
       />
     </div>
     <div v-if="!loaded && !error" class="d-flex justify-center align-center">
