@@ -8,11 +8,13 @@
     <v-icon class="btnIcon">mdi-github-face</v-icon>
     <span class="githubButton_content">
       <span class="subtitle-2">{{ github.account }}/{{ github.repository }}</span>
-      <span class="caption" v-if="statistic.loaded">
-        <br/>
-        Stars: {{ statistic.stargazers_count }}
-        Forks: {{ statistic.forks }}
-      </span>
+      <v-fade-transition>
+        <span class="caption" v-if="statistic.loaded">
+          <br/>
+          Stars: {{ statistic.stargazers_count }}
+          Forks: {{ statistic.forks }}
+        </span>
+      </v-fade-transition>
     </span>
   </v-btn>
 </template>
