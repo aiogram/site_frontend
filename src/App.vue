@@ -1,9 +1,11 @@
 <template>
   <v-app>
     <NavBar/>
-    <v-fade-transition>
-      <router-view/>
-    </v-fade-transition>
+    <v-content>
+      <v-fade-transition>
+        <router-view/>
+      </v-fade-transition>
+    </v-content>
   </v-app>
 </template>
 
