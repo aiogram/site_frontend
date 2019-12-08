@@ -93,7 +93,7 @@
           tooltip: 'Latest',
         },
         {
-          documentation: 'https://aiogram.2038.io',
+          documentation: 'https://dev-docs.aiogram.dev/',
           label: '3.0a0',
           tooltip: 'Work in progress. Is not ready for production.',
         },
