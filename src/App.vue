@@ -2,9 +2,9 @@
   <v-app>
     <NavBar/>
     <v-content>
-      <v-fade-transition>
+      <transition name="fade-transition" mode="out-in">
         <router-view/>
-      </v-fade-transition>
+      </transition>
     </v-content>
   </v-app>
 </template>
