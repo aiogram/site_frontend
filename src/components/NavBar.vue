@@ -7,7 +7,6 @@
           class="shrink mr-2"
           contain
           :src="require('@/assets/logo.png')"
-          transition="scale-transition"
           width="40"
           @click="$route"
         />
