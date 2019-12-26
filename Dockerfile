@@ -2,8 +2,7 @@ FROM node:lts-alpine as stage-build-frontend
 
 WORKDIR /usr/src/app
 COPY . .
-RUN npm install --global yarn \
-  && yarn install \
+RUN yarn install \
   && yarn build \
   && rm -rf node_modules
 
