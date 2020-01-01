@@ -89,7 +89,7 @@
       versions: [
         {
           documentation: 'https://docs.aiogram.dev',
-          label: '2.4',
+          label: '2.5.2',
           tooltip: 'Latest',
         },
         {
