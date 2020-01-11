@@ -94,7 +94,7 @@
         },
         {
           documentation: 'https://dev-docs.aiogram.dev/',
-          label: '3.0a0',
+          label: '3.0a1',
           tooltip: 'Work in progress. Is not ready for production.',
         },
       ]
