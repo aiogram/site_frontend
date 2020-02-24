@@ -10,14 +10,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - name: Setup Node
+      - name: Install NodeJS 10
         uses: actions/setup-node@v1
         with:
           node-version: '10.x'
-      - name: Build
+      - name: Install dependencies
         run: |
           npm i yarn
           yarn install
+      - name: Build
+        run: |
           yarn build
       - name: Deploy
         uses: crazy-max/ghaction-github-pages@v1.3.0
@@ -25,10 +27,9 @@ jobs:
           repo: aiogram/aiogram.github.io
           fqdn: aiogram.dev
           build_dir: dist
-          keep_history: true
           target_branch: master
           committer_email: ci@aiogram.dev
           committer_name: GitHub Actions
-          commit_message: Build of ${{ github.repository }}#${{ github.sha }}
+          commit_message: Build on https://github.com/${{ github.repository }}/commit/${{ github.sha }}
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
