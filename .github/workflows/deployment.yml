@@ -30,6 +30,6 @@ jobs:
           target_branch: master
           committer_email: ci@aiogram.dev
           committer_name: GitHub Actions
-          commit_message: Build on https://github.com/${{ github.repository }}/commit/${{ github.sha }}
+          commit_message: https://github.com/${{ github.repository }}/commit/${{ github.sha }}
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
