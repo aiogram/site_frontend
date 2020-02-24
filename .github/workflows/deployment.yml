@@ -22,7 +22,13 @@ jobs:
       - name: Deploy
         uses: crazy-max/ghaction-github-pages@v1.3.0
         with:
-          target_branch: gh-pages
+          repo: aiogram/aiogram.github.io
+          fqdn: aiogram.dev
           build_dir: dist
+          keep_history: true
+          target_branch: master
+          committer_email: ci@aiogram.dev
+          committer_name: GitHub Actions
+          commit_message: Build of ${{ github.repository }}#${{ github.sha }}
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
