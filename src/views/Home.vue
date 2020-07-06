@@ -32,7 +32,7 @@
         xs12
       >
         <h2 class="headline font-weight-bold mb-3">What's next?</h2>
-        <p><strong>aiogram</strong> is currently has {{ versions.length }} active versions:</p>
+        <p><strong>aiogram</strong> currently has {{ versions.length }} active versions:</p>
 
         <v-layout justify-center>
           <v-tooltip
@@ -73,7 +73,7 @@
       >
         <h3>Special thanks</h3>
         <p>
-          Special thanks for
+          Special thanks to
           <router-link to="/contributors">our contributors</router-link> and
           <a href="https://opencollective.com/aiogram#section-contributors">financial contributors</a>.
         </p>
