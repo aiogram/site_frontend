@@ -32,7 +32,7 @@
         xs12
       >
         <h2 class="headline font-weight-bold mb-3">What's next?</h2>
-        <p><strong>aiogram</strong> is currently have {{ versions.length }} active versions:</p>
+        <p><strong>aiogram</strong> is currently has {{ versions.length }} active versions:</p>
 
         <v-layout justify-center>
           <v-tooltip
@@ -62,8 +62,7 @@
       >
         <p class="subheading font-weight-regular">
           For help and collaboration with other <strong>aiogram</strong> developers,
-          <br>please visit our online
-          <a href="https://t.me/aiogram" target="_blank">english</a> or <a href="https://t.me/aiogram_ru" target="_blank">russian</a> communities.
+          please visit our online <a href="https://t.me/aiogram" target="_blank">English</a> or <a href="https://t.me/aiogram_ru" target="_blank">Russian</a> community.
         </p>
       </v-flex>
 
