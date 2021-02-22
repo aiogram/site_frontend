@@ -92,11 +92,11 @@
           label: '2.11.2',
           tooltip: 'Latest',
         },
-        {
+        /* {
           documentation: 'https://dev-docs.aiogram.dev/',
           label: '3.0a5',
           tooltip: 'Work in progress. Is not ready for production.',
-        },
+        }, */
       ]
     }),
   };
