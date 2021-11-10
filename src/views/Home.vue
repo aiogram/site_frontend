@@ -89,12 +89,12 @@
       versions: [
         {
           documentation: 'https://docs.aiogram.dev',
-          label: '2.15',
+          label: '2.16',
           tooltip: 'Latest',
         },
         {
           documentation: 'https://docs.aiogram.dev/en/dev-3.x/',
-          label: '3.0-alpha.16',
+          label: '3.0-alpha',
           tooltip: 'Work in progress. Is not ready for production.',
         },
       ]
