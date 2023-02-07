@@ -32,4 +32,4 @@ jobs:
           committer_name: GitHub Actions
           commit_message: Build https://github.com/${{ github.repository }}/commit/${{ github.sha }}
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
