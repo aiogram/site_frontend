@@ -94,7 +94,7 @@
         },
         {
           documentation: 'https://docs.aiogram.dev/en/dev-3.x/',
-          label: '3.0-beta',
+          label: '3.0 Beta',
           tooltip: 'Work in progress',
         },
       ]
