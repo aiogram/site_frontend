@@ -3,10 +3,11 @@ name: Build & Deploy GitHub Pages
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -44,15 +45,14 @@ jobs:
           path: dist/
 
   deploy:
+    name: Deploy to GitHub Pages
     needs: build
     permissions:
       pages: write
       id-token: write
-
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to GitHub Pages
