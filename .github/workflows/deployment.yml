@@ -22,7 +22,7 @@ jobs:
         run: |
           yarn build
       - name: Upload artifacts
-        uses: actions/upload-pages-artifact
+        uses: actions/upload-pages-artifact@v2.0.0
         with:
           name: Site
           path: dist/
