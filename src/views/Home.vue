@@ -90,7 +90,7 @@
         {
           documentation: 'https://docs.aiogram.dev/en/dev-3.x/',
           label: '3.0',
-          tooltip: 'Release Candidate',
+          tooltip: 'Latest',
         },
       ]
     }),
