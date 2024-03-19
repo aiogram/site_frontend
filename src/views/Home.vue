@@ -32,7 +32,7 @@
         xs12
       >
         <h2 class="headline font-weight-bold mb-3">What's next?</h2>
-        <p><strong>aiogram</strong> currently has {{ versions.length }} active versions:</p>
+        <p><strong>aiogram</strong> currently has {{ versions.length }} active version:</p>
 
         <v-layout justify-center>
           <v-tooltip
@@ -89,7 +89,7 @@
       versions: [
         {
           documentation: 'https://docs.aiogram.dev/en/dev-3.x/',
-          label: '3.0',
+          label: '3.x',
           tooltip: 'Latest',
         },
       ]
